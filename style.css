@@ -1,0 +1,107 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Amaranth);
+@import url(https://fonts.googleapis.com/css?family=Reenie+Beanie);
+@import url(https://fonts.googleapis.com/css?family=Katibeh);
+@import url(https://fonts.googleapis.com/css?family=Expletus+Sans);
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script);
+
+.title-picture{
+
+  border-width:0px;
+  border-style:solid;
+  border-radius:50%;
+  width:30%;
+  margin: auto;
+
+}
+.portfolio-image {
+ width:250px;
+   height:250px;
+  border-radius:50%;
+  border-width:0px;
+  border-style:solid;
+  padding-bottom:10px;
+  margin: auto;
+
+}
+#buffer{
+  height: 100vh;
+  background-color:#000019;
+  margin-left: 0px;  
+  margin-right:0px;
+  width: 100%;
+  
+  
+}
+
+#about{
+ 
+  font-family:Amaranth;
+  background-color:#DCDCC6;
+  height:100vh;
+  font-size:24px;
+  margin-left: 0px;
+  margin-right:0px;
+  width: 100%;
+}
+#portfolio{
+   background-image:url("http://wallpapershdfine.com/wp-content/gallery/engineering-background-images/Engineering-backgrounds-3.jpg");
+background-size: cover;
+background-position: center center;
+background-repeat: no-repeat;
+  height:100vh;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+}
+#contact{
+  background-color:#000;
+  height:100vh;
+  left: 0;
+  right:0;
+}
+
+body { background:rgb(30,30,40); }
+form { max-width:420px; margin:50px auto; }
+
+.feedback-input {
+  color:white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #CC6666;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid #CC4949; }
+
+textarea {
+  height: 130px;
+  line-height: 130%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:#CC6666;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:#CC4949; }
