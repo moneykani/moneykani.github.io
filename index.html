@@ -1,45 +1,32 @@
 <html>
 <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script>
-$(document).ready(function(){
-
-  $("a").on('click', function(event) {
-
-
-    if (this.hash !== "") {
-
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 1000, function(){
-
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_F5wufJ31wgGPxmHvULEb7");
+   })(); 	 	
+</script>
+<script src="notify.min.js"></script>	
+<script src="app.js">
 </script>
  
 <div >  
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <ul class="nav navbar-nav">
-    <li><a href="#buffer" style="font-family:Reenie Beanie; font-size:25px;">Deepak Dhankani</a></li>
-    <li><a href="#about" style="font-family:Expletus Sans; font-size:18px;">About Me</a></li>
-    <li><a href="#portfolio" style="font-family:Expletus Sans; font-size:18px;">Projects</a></li>
-    <li><a href="#contact" style="font-family:Expletus Sans; font-size:18px;">Contact</a></li>
+    <li><a class="nav-anchor active" href="#" data-click="buffer" style="font-family:Reenie Beanie; font-size:25px;">Deepak Dhankani</a></li>
+    <li><a class="nav-anchor" href="#" data-click="about" style="font-family:Expletus Sans; font-size:18px;">About Me</a></li>
+    <li><a class="nav-anchor" href="#" data-click="portfolio" style="font-family:Expletus Sans; font-size:18px;">Projects</a></li>
+    <li><a class="nav-anchor" href="#" data-click="contact" style="font-family:Expletus Sans; font-size:18px;">Contact</a></li>
   </ul>
 </nav>
 <div id="buffer" style="padding-top:50px">
 
   <img src="https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/13310471_10208916979497693_8586485070303534387_n.jpg?oh=88894b8b55cd8a976c1056e74b2fdd3f&oe=58551FC4" class="title-picture img-responsive"> 
-  <h3 class="text-center" style="color:white; font-family:Katibeh; font-size:45px;">Deepak Dhankani</h3>
+  <h3 class="text-center fadeIn" style="color:white; font-family:Katibeh; font-size:45px;">Deepak Dhankani</h3>
   <h4 class="text-center" style="color:white; font-family:Expletus Sans;">Mechanical Engineer - Software Developer - Technology Enthusiast</h4>
   </div>
   
@@ -62,12 +49,11 @@ $(document).ready(function(){
   </div>
 <div id="contact" style="padding-top:40px;">
   <form>      
-  <input name="name" type="text" class="feedback-input" placeholder="Name" />   
-  <input name="email" type="text" class="feedback-input" placeholder="Email" />
-  <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
-  <input type="submit" value="SUBMIT"/>
+  <input type="text" class="feedback-input" placeholder="Name" id="name-field" />   
+  <input type="text" class="feedback-input" placeholder="Email" id="email-field" />
+  <textarea class="feedback-input" placeholder="Comment" id="comment-field"></textarea>
+  <button class="btn btn-default btn-lg" id="submit-btn">Submit</button>
 </form>
-
   <p class="text-center" style="font-family:Expletus Sans; font-size:20px; color:white;">Follow me on 
     <a href="https://www.linkedin.com/in/deepakdhankani1" target="_blank"><img src="https://cdn1.iconfinder.com/data/icons/social-media-icon-1/112/linkedin-48.png"></a>
   
