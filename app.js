@@ -14,8 +14,8 @@ $(document).ready(function(){
   
   $("#submit-btn").on("click", function() {
       var from = $("#name-field").val();
-	  var email = $("email-field").val();
-	  var msg = $("comment-field").val();
+	  var email = $("#email-field").val();
+	  var msg = $("#comment-field").val();
 	  
 	  emailjs.send("mailgun", "contact_form", {
 	      from: from,
