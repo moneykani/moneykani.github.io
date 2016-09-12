@@ -50,7 +50,7 @@
      background-color: #a5c9e5;
   background-image:
     url("https://www.transparenttextures.com/patterns/gplay.png");
-  height:100vh;
+  height:90vh;
   margin-left: 0;
   margin-right: 0;
   width: 100%;
@@ -181,6 +181,7 @@ ul.rig.columns-4 li {
   font-family: 'Open Sans', sans-serif;
   font-size: 112.5%;
   line-height: 1.6em;
+   box-shadow:0px 0px 10px 0px #333;
 }
 
 /* ================ The Timeline ================ */
@@ -466,12 +467,11 @@ ul.rig.columns-4 li {
   margin-right: 0;
   width: 100%;
     font-family:Amaranth;
- box-shadow:0px 0px 10px 0px #333;
   box-shadow:0px 0px 10px 0px #333;
   margin:0 auto;
 	background: #ccc;
   overflow:hidden;
-  background:blue;
+  background:#7EC0EE;
   height:100vh;
   animation: scroll 5s infinite linear;	
   -webkit-animation: scroll 5s infinite linear;
