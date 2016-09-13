@@ -14,7 +14,18 @@
   margin: auto;
 
 }
-
+.portfolio-image {
+  background-color:white;
+  background-size: cover;
+   width:180px;
+   height:180px;
+   display:inline-block;
+  border-radius:50%;
+  border-width:5px;
+  border-style:solid;
+  padding-bottom:0px;
+  margin: auto;
+}
 #buffer{
   height: 100vh;
   background-color:#000019;
