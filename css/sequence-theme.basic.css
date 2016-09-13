@@ -95,6 +95,11 @@ html,
   background-color: #2BBF8E;
 }
 
+.seq .seq-pagination > *:nth-child(4):focus,
+.seq .seq-pagination > *:nth-child(4):hover {
+  background-color: #000012;
+}
+
 .seq .seq-canvas {
   /* Make the canvas the same dimensions as the container and prevent lines
    * from wrapping so each step can sit side-by-side */
@@ -168,27 +173,35 @@ html,
 
 .seq .seq-step1 .seq-button:focus,
 .seq .seq-step1 .seq-button:hover {
-  color: #279FE5;
+  color: #fff;
 }
 
 .seq .seq-step2 {
-  background-color: #F96852;
+  background-color: #279FE5;
 }
 
 .seq .seq-step2 .seq-button:focus,
 .seq .seq-step2 .seq-button:hover {
-  color: #F96852;
+  color: #fff;
 }
 
 .seq .seq-step3 {
-  background-color: #2BBF8E;
+  background-color: #279FE5;
 }
 
 .seq .seq-step3 .seq-button:focus,
 .seq .seq-step3 .seq-button:hover {
-  color: #2BBF8E;
+  color: #fff;
 }
 
+.seq .seq-step4 {
+  background-color: #279FE5;
+}
+
+.seq .seq-step4 .seq-button:focus,
+.seq .seq-step4 .seq-button:hover {
+  color: #fff;
+}
 .seq .seq-title,
 .seq .seq-subtitle,
 .seq .seq-button {
@@ -366,7 +379,7 @@ html,
     position: relative;
     height: auto;
     height: 100%;
-    max-height: 90vh;
+    max-height: 100vh;
     min-height: 420px;
   }
 
